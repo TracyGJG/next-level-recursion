@@ -1,0 +1,15 @@
+{
+  "name": "next-level-recursion",
+  "version": "1.0.0",
+  "description": "Source code for the Dev.to article on recursion after factorials and Fibonacci",
+  "scripts": {
+    "1a": "node factorial-r.js",
+    "1b": "node factorial-i.js",
+    "2a": "node fibonacci-r.js",
+    "2b": "node fibonacci-i.js",
+    "3": "node objectFlat.js"
+  },
+  "keywords": [],
+  "author": "Tracy-Gregory Gilmore",
+  "license": "CC0-1.0"
+}
