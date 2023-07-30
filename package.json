@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Source code for the Dev.to article on recursion after factorials and Fibonacci",
   "scripts": {
-    "1a": "node factorial-r.js",
-    "1b": "node factorial-i.js",
-    "2a": "node fibonacci-r.js",
-    "2b": "node fibonacci-i.js",
-    "3": "node objectFlat.js"
+    "1a": "node factorial-i.js",
+    "1b": "node factorial-r.js",
+    "2a": "node fibonacci-i.js",
+    "2b": "node fibonacci-r.js",
+    "3a": "node objectFlat_initial.js",
+    "3b": "node objectFlat.js"
   },
   "keywords": [],
   "author": "Tracy-Gregory Gilmore",

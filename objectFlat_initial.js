@@ -1,22 +1,14 @@
-function objectFlat(srcObj, propName) {
+function objectFlat(srcObj) {
 	if (Array.isArray(srcObj)) {
-		return propName
-			? srcObj.reduce(
-					(tgtObj, item, index) => ({
-						...tgtObj,
-						[`${propName}[${index}]`]: objectFlat(item),
-					}),
-					{}
-			  )
-			: srcObj.map(item => objectFlat(item));
+		return srcObj.map(item => objectFlat(item));
 	}
 	if (isObject(srcObj)) {
 		return Object.entries(srcObj).reduce((tgtObj, [key, val]) => {
-			const tgtProp = propName ? `${propName}.${key}` : key;
-			return { ...tgtObj, ...objectFlat(val, tgtProp) };
+			tgtObj[key] = objectFlat(val);
+			return tgtObj;
 		}, {});
 	}
-	return propName ? { [propName]: srcObj } : srcObj;
+	return srcObj;
 }
 
 function isObject(obj) {
