@@ -21,6 +21,5 @@ To execute the tests for a specific function use the following command in a term
 `npm run <example>` where `<example>` is something like `1a` or `3b`.
 
 ### Pre-requisites
-1. Install (Node.js)[https://nodejs.org]
+1. Install [Node.js](https://nodejs.org)
 1. No need to execute `npm install` because there are no 3rd-party dependencies.
-1. 
